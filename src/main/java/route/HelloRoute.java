@@ -10,9 +10,6 @@ public class HelloRoute extends SpringRouteBuilder {
 
   @Override
   public void configure() throws Exception {
-//    from("timer:start?period=3s")
-//      .to("log:end");
-
     // エラー処理
     onException(Exception.class)
       .handled(true)
